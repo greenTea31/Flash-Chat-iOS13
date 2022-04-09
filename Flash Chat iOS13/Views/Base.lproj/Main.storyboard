@@ -316,7 +316,7 @@
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="sendPressed:" destination="lwd-AH-u8E" eventType="touchUpInside" id="GuM-yU-UjQ"/>
+                                            <action selector="sendPressed:" destination="lwd-AH-u8E" eventType="touchUpInside" id="jNa-Yz-9cL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -343,7 +343,13 @@
                             <constraint firstItem="S6L-hg-cne" firstAttribute="top" secondItem="6YX-ca-E8f" secondAttribute="top" id="sQt-L5-8LV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Q5u-eL-Bgp"/>
+                    <navigationItem key="navigationItem" id="Q5u-eL-Bgp">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="5A4-Uv-das">
+                            <connections>
+                                <action selector="logOutPressed:" destination="lwd-AH-u8E" id="26I-K0-EAx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="UWj-GQ-Vph" id="INS-Xk-EA9"/>
                         <outlet property="tableView" destination="S6L-hg-cne" id="dTJ-K9-WAe"/>
